@@ -120,6 +120,13 @@
   margin-bottom: 50px;
 }
 
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   width: 174px;
   height: 100px;
