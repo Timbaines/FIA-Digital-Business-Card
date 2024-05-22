@@ -1,0 +1,230 @@
+#root {
+  box-sizing: border-box;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/***** COMPONENTS | HEADER.JSX *****/
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.fia-logo {
+  width: 50px;
+}
+
+.bio-company {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-left: 15px;
+}
+
+/***** COMPONENTS | HERO.JSX *****/
+.container-hero {
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.bio-name {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  letter-spacing: .02rem;
+  margin-bottom: 15px;
+}
+
+.bio-position {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.bio-social {
+  display: flex;
+  font-size: 24px;
+  gap: 16px;
+}
+
+.bio-social a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+.bio-social a:hover {
+  color: #ffffff;
+}
+
+/***** COMPONENTS | BIO.JSX *****/
+.container-bio {
+  padding: 0 20px;
+}
+
+.bio-about {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.bio-content {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin-bottom: 30px;
+}
+
+.bio-standout {
+  color: #ffffff;
+}
+
+.btn-support {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 2.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #142a39;
+  color: #5eead3;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-bottom: 30px;
+}
+
+.btn-support:hover {
+  border-color: #5eead3;
+}
+.btn-support:focus,
+.btn-support:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/***** COMPONENTS | CARD.JSX *****/
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 174px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.25s;
+}
+
+.card:hover {
+  border-color: #5eead3;
+}
+
+.card-number {
+  color: #5eead3;
+  position: absolute;
+  font-size: 1.5rem;
+  right: 15px;
+  top: -15px;
+}
+
+.card-badge {
+  width: 40px;
+  border-radius: 100%;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.btn-connect {
+  background: #142a39;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  color: #5eead3;
+  cursor: pointer;
+  width: 70px;
+  font-size: .8rem;
+  padding: 5px 10px;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
+/***** MEDIA QUERIES 960PX | HEADER.JSX *****/
+@media screen and (max-width: 960px) {
+  .logo {
+    width: 160px;
+  }
+
+  .bio-name {
+    font-size: 2.1rem;
+    margin: 10px auto;
+  }
+}
+
+/***** MEDIA QUERIES 768PX | HEADER.JSX *****/
+@media screen and (max-width: 768px) {
+  #root {
+    padding: 0;
+  }
+  .fia-logo {
+    width: 40px;
+  }
+
+  .bio-company {
+    font-size: .9rem;
+  }
+/***** MEDIA QUERIES 768PX | HERO.JSX *****/
+  .container-hero {
+      display: block;
+      padding: 20px 20px;
+    }
+
+  .logo {
+    width: 115px;
+    border-radius: 100%;
+  }
+
+  .bio-name {
+    font-size: 1.8rem;
+    margin: 10px auto;
+  }
+  .bio-position {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .bio-social {
+    display: flex;
+    font-size: 20px;
+    gap: 15px;
+    margin-bottom: 21px;
+  }
+/***** MEDIA QUERIES 768PX | CARD.JSX *****/
+  .cards-list {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+/***** MEDIA QUERIES 768PX | BIO.JSX *****/
+  .bio-content {
+    font-size: .9rem;
+  }
+}
