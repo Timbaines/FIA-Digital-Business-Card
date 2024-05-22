@@ -120,6 +120,13 @@
   margin-bottom: 50px;
 }
 
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   width: 174px;
   height: 100px;
@@ -223,6 +230,11 @@
     padding: 0 20px;
     margin-bottom: 40px;
   }
+
+  .card:hover {
+    border-color: transparent;
+  }
+
 /***** MEDIA QUERIES 768PX | BIO.JSX *****/
   .bio-content {
     font-size: .9rem;
