@@ -4,6 +4,7 @@ import { faLinkedinIn, faSquareFacebook, faSquareInstagram, faSnapchatSquare, fa
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Hero() {
+
     return (
         <div className="container-hero">
             <img src={bioLogo} className="logo" alt=""/>

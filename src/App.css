@@ -5,7 +5,6 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  height: 100vh;
 }
 
 /***** COMPONENTS | HEADER.JSX *****/
@@ -126,10 +125,14 @@
   cursor: pointer;
   width: 70px;
   font-size: .8rem;
-  padding: 5px 10px;
+  padding: 5px 12px;
   position: absolute;
-  right: 10px;
+  right: 15px;
   top: 60px;
+}
+
+.btn-connect span {
+  margin-right: 5px;
 }
 
 /***** COMPONENTS | BIO.JSX *****/

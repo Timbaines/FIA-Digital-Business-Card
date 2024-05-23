@@ -17,9 +17,9 @@ const tc = 'curl --location \'https://app.kindful.com/api/v1/imports\' \\\n' +
     '  "data": [\n' +
     '    {\n' +
     '      "id": "t01", \n' +
-    '      "first_name": "Daniel", \n' +
-    '      "last_name": "Bateman", \n' +
-    '      "email": "daniel@email.com", \n' +
+    '      "first_name": "First", \n' +
+    '      "last_name": "Last", \n' +
+    '      "email": "emaill@email.com", \n' +
     '      "Runner": "yes"    }\n' +
     '  ] \n' +
     '}\'';

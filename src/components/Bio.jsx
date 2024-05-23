@@ -1,4 +1,5 @@
 export default function Bio() {
+
     return (
         <div className="container-bio">
             <h2 className="bio-about">About</h2>
