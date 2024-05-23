@@ -3,7 +3,26 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { AiOutlineClose } from 'react-icons/ai';
 
 
-const tc = 'By clicking the "Submit" button below, I confirm that I have read, understood, and given my consent for the company and its affiliates, representatives, agents, third-party service providers, contractors, and/or appointed distribution/business partners (collectively referred to as "the Company") to collect, use, disclose, and/or process my personal data for the purpose of contacting me about products and services offered by the Company through marketing activities via all channels including but not limited to SMS, social media, in-app push notifications, phone calls, etc., and perusing my contact details which the Company has in its records from time to time and in accordance with the Company\'s Data Privacy Notice, which is available at [Privacy Notice URL]. ';
+const tc = 'curl --location \'https://app.kindful.com/api/v1/imports\' \\\n' +
+    '--header \'Authorization: Token token="PASTE YOUR PRODUCTION TOKEN HERE"\' \\\n' +
+    '--header \'Content-Type: application/json\' \\\n' +
+    '--data-raw \'{\n' +
+    '  "data_format": "contact",\n' +
+    '  "data_type": "json",\n' +
+    '  "match_by": {\n' +
+    '    "group": "name"\n' +
+    '  },\n' +
+    '  "action_type": "create",\n' +
+    '  "groups": ["Runner"], \n' +
+    '  "data": [\n' +
+    '    {\n' +
+    '      "id": "t01", \n' +
+    '      "first_name": "Daniel", \n' +
+    '      "last_name": "Bateman", \n' +
+    '      "email": "daniel@email.com", \n' +
+    '      "Runner": "yes"    }\n' +
+    '  ] \n' +
+    '}\'';
 
 const Modal = () => {
     const [showModal, setShowModal] = useState(false);
