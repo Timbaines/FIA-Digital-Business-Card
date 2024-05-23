@@ -1,7 +1,5 @@
 import bioLogo from '/andy-bachert-profile-avatar.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faSquareFacebook, faSquareInstagram, faSnapchatSquare, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaInstagram, FaLinkedin, FaFacebook, FaSnapchatSquare, FaYoutube } from "react-icons/fa";
 
 export default function Hero() {
 
@@ -12,18 +10,17 @@ export default function Hero() {
                 <h1 className="bio-name">Andy Bachert</h1>
                 {/*<h3 className="bio-position">Chief Operating Officer</h3>*/}
                 <div className="bio-social">
-                    <a href="https://www.instagram.com/abachert76" target="_blank"
-                       rel="noopener noreferrer"><i><FontAwesomeIcon icon={faSquareInstagram}/></i></a>
-                    <a href="https://www.facebook.com/andy.bachert" target="_blank"
-                       rel="noopener noreferrer"><i><FontAwesomeIcon icon={faSquareFacebook}/></i></a>
                     <a href="https://www.linkedin.com/in/andrew-bachert-68250479/" target="_blank"
-                       rel="noopener noreferrer"><i><FontAwesomeIcon icon={faLinkedinIn}/></i></a>
-                    <a href="mailto:andybachert@fiaintl.org" target="_blank"
-                       rel="noopener noreferrer"><i><FontAwesomeIcon icon={faEnvelope}/></i></a>
+                       rel="noopener noreferrer"><FaLinkedin/></a>
+                    <a href="https://www.instagram.com/abachert76" target="_blank"
+                       rel="noopener noreferrer"><FaInstagram/></a>
+                    <a href="https://www.facebook.com/andy.bachert" target="_blank"
+                       rel="noopener noreferrer"><FaFacebook/></a>
                     <a href="https://story.snapchat.com/s/abachert123" target="_blank"
-                       rel="noopener noreferrer"><i><FontAwesomeIcon icon={faSnapchatSquare}/></i></a>
+                       rel="noopener noreferrer"><FaSnapchatSquare/></a>
                     <a href="https://www.youtube.com/channel/UCaNMokRDzPNlouU-UuL-W7Q" target="_blank"
-                       rel="noopener noreferrer"><i><FontAwesomeIcon icon={faYoutube}/></i></a>
+                       rel="noopener noreferrer"><FaYoutube />
+                    </a>
                 </div>
             </div>
         </div>

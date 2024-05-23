@@ -7,6 +7,14 @@
   padding: 0 20px;
 }
 
+/***** TYPOGRAPHY | GLOBAL *****/
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
 /***** COMPONENTS | HEADER.JSX *****/
 .header {
   display: flex;
@@ -140,12 +148,6 @@
   padding: 0 20px;
 }
 
-.bio-about {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-}
 
 .bio-content {
   color: rgba(255, 255, 255, 0.5);
@@ -213,6 +215,22 @@
   font-weight: 400;
   margin-bottom: 80px;
   line-height: 1.4rem;
+}
+
+.btn-download {
+  background: transparent;
+  color: #5eead3;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.download-icon {
+  color: #5eead3;
+  font-size: 1.4rem;
+  margin-right: 8px;
 }
 
 .btn-close-modal {
