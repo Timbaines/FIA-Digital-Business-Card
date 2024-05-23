@@ -2,8 +2,10 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Bio from './components/Bio';
 import data from './data.js';
-import './App.css'
 import Card from "./components/Card.jsx";
+import Modal from './components/Modal.jsx';
+
+import './App.css'
 
 function App() {
     const cards = data.map(item => {
@@ -23,6 +25,7 @@ function App() {
             {cards}
         </div>
         <Bio/>
+        <Modal />
     </>
   )
 }
