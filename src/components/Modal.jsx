@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AiOutlineCloudDownload, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlinePhone, AiOutlineCloudDownload, AiOutlineClose } from 'react-icons/ai';
 
 
 const Modal = () => {
@@ -17,7 +17,7 @@ const Modal = () => {
         return (
             <div id="Contact" className="modal-container">
                     <button
-                        onClick={toggleModal} className="btn-support">Get Involved
+                        onClick={toggleModal} className="btn-support">Join Our Team
                     </button>
                 <AnimatePresence> {showModal && (
                     <motion.div className="modal-overlay" initial={{opacity: 0}} animate={{opacity: 1}}
@@ -32,9 +32,16 @@ const Modal = () => {
                             transition: {type: 'spring', stiffness: 100, damping: 20, duration: 2}
                         }}>
                             <div className="modal-content">
-                                <h2>Volunteer Applications</h2>
-                                <p className="bio-content">Help us get to know your abilities and availability. If you
-                                    have a heart to serve, we can find a job for you! </p>
+                                <div className="modal-header">
+                                    <h2>Volunteer Applications</h2>
+                                    <div className="mobile-header-contact">
+                                        <a href="mailto:FIA-USA@fiaintl.org" className="modal-contact modal-email"><AiOutlineMail
+                                            className="contact-icon"/>Email</a>
+                                        <a href="tel:7175460208" className="modal-contact modal-phone"><AiOutlinePhone
+                                            className="contact-icon"/>Call Us</a>
+                                    </div>
+                                </div>
+                                <p className="primary-font">Ready to begin your calling? If you have a heart to serve, we can find a job for you! The forms are available for downloaded below.</p>
                                 <button className="btn-download"><AiOutlineCloudDownload className="download-icon"/>Volunteer
                                     App
                                 </button>
@@ -49,16 +56,16 @@ const Modal = () => {
                             <div className="closeButton">
                                 <button onClick={closeModal} className="btn-close-modal"><AiOutlineClose size={24}/>
                                 </button>
+
                                 {/*<a className='kindful-donate-btn'*/}
                                 {/*   id='kindful-donate-btn-f48de2be-7a9c-4c5d-9fb0-3e40699172ec'>*/}
                                 {/*    <button className="btn btn-support" id="btn-kindful">Support</button>*/}
                                 {/*</a>*/}
                             </div>
-
                         </motion.div>
                     </motion.div>)} </AnimatePresence>
             </div>
         )
-    }
+}
 
 export default Modal;

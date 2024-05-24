@@ -15,6 +15,12 @@ h2 {
   letter-spacing: .1rem;
 }
 
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
 /***** COMPONENTS | HEADER.JSX *****/
 .header {
   display: flex;
@@ -150,9 +156,6 @@ h2 {
 
 
 .bio-content {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1rem;
-  line-height: 1.7rem;
   margin-bottom: 30px;
 }
 
@@ -210,11 +213,45 @@ h2 {
   overflow-y: auto;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-header-contact {
+  display: flex;
+}
+
+.modal-contact {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-left: 10px;
+  padding: 7px 9px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-icon {
+  font-size: 1rem;
+  margin-right: 3px;
+}
+
+.modal-email {
+  background: rgba(13, 202, 240, 0.3);
+  color: #0DCAF0;
+}
+
+.modal-phone {
+  background: rgba(255, 193, 7, 0.3);
+  color: #FFC107;
+}
+
 .modal-content {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
   margin-bottom: 80px;
-  line-height: 1.4rem;
 }
 
 .btn-download {
@@ -225,6 +262,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 5px 0;
+  cursor: pointer;
 }
 
 .download-icon {
