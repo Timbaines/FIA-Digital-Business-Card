@@ -17,7 +17,7 @@ h2 {
 
 p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1rem;
+  font-size: 1.6em;
   line-height: 1.7rem;
 }
 
@@ -202,6 +202,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.4em;
 }
 
 .mobile-header-contact {
@@ -209,7 +210,6 @@ p {
 }
 
 .modal-content {
-  font-size: 12px;
   margin-bottom: 80px;
 }
 
@@ -219,14 +219,9 @@ p {
   font-weight: 500;
   border-radius: 20px;
   margin-left: 7px;
-  padding: 7px 10px;
+  padding: 7px 13px;
   cursor: pointer;
   text-decoration: none;
-}
-
-.modal-icon {
-  font-size: 1rem;
-  margin-right: 4px;
 }
 
 .modal-email {
@@ -242,7 +237,7 @@ p {
 .btn-join {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.8em 2.4em;
+  padding: 0.8em 2.2em;
   font-size: 1.6em;
   font-weight: 500;
   font-family: inherit;
