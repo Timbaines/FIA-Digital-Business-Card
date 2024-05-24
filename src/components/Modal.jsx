@@ -41,7 +41,7 @@ const Modal = () => {
                                             className="modal-icon"/>Email</a>
                                     </div>
                                 </div>
-                                <p className="primary-font">Ready to begin your calling? If you have a heart to serve, we can find a job for you! You can download the forms that are available below.</p>
+                                <p className="primary-font">Ready to begin your calling? If you have a heart to serve, we can find a job for you! You can download the the available forms below.</p>
                                 <button className="btn btn-download"><AiOutlineCloudDownload className="download-icon"/>Volunteer
                                     App
                                 </button>
