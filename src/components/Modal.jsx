@@ -33,11 +33,11 @@ const Modal = () => {
                         }}>
                             <div className="modal-content">
                                 <div className="modal-header">
-                                    <h2>App Downloads</h2>
+                                    <h2>Volunteer Apps</h2>
                                     <div className="mobile-header-contact">
-                                        <a href="mailto:FIA-USA@fiaintl.org" className="modal-contact modal-email"><AiOutlineMail
-                                            className="contact-icon"/>Email</a>
-                                        <a href="tel:7175460208" className="modal-contact modal-phone"><AiOutlinePhone
+                                        <a href="mailto:FIA-USA@fiaintl.org" className="modal-badge modal-email"><AiOutlineMail
+                                            className="contact-badge"/>Email</a>
+                                        <a href="tel:7175460208" className="modal-badge modal-phone"><AiOutlinePhone
                                             className="contact-icon"/>Call Us</a>
                                     </div>
                                 </div>
