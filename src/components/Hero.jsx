@@ -5,10 +5,9 @@ export default function Hero() {
 
     return (
         <div className="container-hero">
-            <img src={bioLogo} className="logo" alt=""/>
+            <img src={bioLogo} className="bio-image" alt=""/>
             <div className="bio-info">
                 <h1 className="bio-name">Andy Bachert</h1>
-                {/*<h3 className="bio-position">Chief Operating Officer</h3>*/}
                 <div className="bio-social">
                     <a href="https://www.linkedin.com/in/andrew-bachert-68250479/" target="_blank"
                        rel="noopener noreferrer"><FaLinkedin/></a>

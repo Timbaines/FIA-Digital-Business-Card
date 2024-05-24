@@ -7,7 +7,7 @@ export default function Card(props) {
             <p className="card-number">{props.spot}</p>
             <img src={`${props.socialBadge}`} className="card-badge" alt="card-image"/>
             <button
-                className="btn-connect">{props.connect}
+                className="btn btn-connect">{props.connect}
                 <span>Visit</span>
                 <FiArrowUpRight className="arrow-icon" />
             </button>

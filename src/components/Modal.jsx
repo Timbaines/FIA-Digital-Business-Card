@@ -17,7 +17,7 @@ const Modal = () => {
         return (
             <div id="Contact" className="modal-container">
                     <button
-                        onClick={toggleModal} className="btn-support">Join Our Team
+                        onClick={toggleModal} className="btn btn-join">Join Our Team
                     </button>
                 <AnimatePresence> {showModal && (
                     <motion.div className="modal-overlay" initial={{opacity: 0}} animate={{opacity: 1}}
@@ -36,25 +36,25 @@ const Modal = () => {
                                     <h2>Volunteer Apps</h2>
                                     <div className="mobile-header-contact">
                                         <a href="mailto:FIA-USA@fiaintl.org" className="modal-badge modal-email"><AiOutlineMail
-                                            className="contact-badge"/>Email</a>
+                                            className="modal-icon"/>Email</a>
                                         <a href="tel:7175460208" className="modal-badge modal-phone"><AiOutlinePhone
-                                            className="contact-icon"/>Call Us</a>
+                                            className="modal-icon"/>Call Us</a>
                                     </div>
                                 </div>
                                 <p className="primary-font">Ready to begin your calling? If you have a heart to serve, we can find a job for you! The forms are available for downloaded below.</p>
-                                <button className="btn-download"><AiOutlineCloudDownload className="download-icon"/>Volunteer
+                                <button className="btn btn-download"><AiOutlineCloudDownload className="download-icon"/>Volunteer
                                     App
                                 </button>
-                                <button className="btn-download"><AiOutlineCloudDownload className="download-icon"/>Travel
+                                <button className="btn btn-download"><AiOutlineCloudDownload className="download-icon"/>Travel
                                     App
                                 </button>
-                                <button className="btn-download"><AiOutlineCloudDownload className="download-icon"/>Skills Survey
+                                <button className="btn btn-download"><AiOutlineCloudDownload className="download-icon"/>Skills Survey
                                 </button>
-                                <button className="btn-download"><AiOutlineCloudDownload className="download-icon"/>References
+                                <button className="btn btn-download"><AiOutlineCloudDownload className="download-icon"/>References
                                 </button>
                             </div>
                             <div className="closeButton">
-                                <button onClick={closeModal} className="btn-close-modal"><AiOutlineClose size={24}/>
+                                <button onClick={closeModal} className="btn btn-close-modal"><AiOutlineClose size={24}/>
                                 </button>
 
                                 {/*<a className='kindful-donate-btn'*/}

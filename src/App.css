@@ -21,18 +21,29 @@ p {
   line-height: 1.7rem;
 }
 
+/***** BUTTONS | GLOBAL *****/
+.btn {
+  cursor: pointer;
+}
+
 /***** COMPONENTS | HEADER.JSX *****/
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
 }
 
 .fia-logo {
   width: 50px;
 }
 
-.bio-company {
+.header-company {
   font-size: 1rem;
   font-weight: 100;
   margin-left: 15px;
@@ -45,7 +56,7 @@ p {
   align-items: center;
 }
 
-.logo {
+.bio-image {
   width: 180px;
   border-radius: 100%;
   margin-right: 20px;
@@ -57,12 +68,6 @@ p {
   line-height: 3.4rem;
   letter-spacing: .02rem;
   margin-bottom: 15px;
-}
-
-.bio-position {
-  font-size: 1.3em;
-  font-weight: 400;
-  margin-top: 0;
 }
 
 .bio-social {
@@ -90,7 +95,7 @@ p {
   margin-bottom: 50px;
 }
 
-*{
+*{ /* Hide Scrollbar */
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
@@ -137,7 +142,6 @@ p {
   border: 1px solid transparent;
   border-radius: 20px;
   color: #5eead3;
-  cursor: pointer;
   width: 70px;
   font-size: .8rem;
   padding: 5px 12px;
@@ -165,28 +169,6 @@ p {
 
 .bio-standout {
   color: #ffffff;
-}
-
-.btn-support {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.8em 2.4em;
-  font-size: 1.6em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #142a39;
-  color: #5eead3;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  margin-bottom: 30px;
-}
-
-.btn-support:hover {
-  border-color: #5eead3;
-}
-.btn-support:focus,
-.btn-support:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 /***** COMPONENTS | MODAL.JSX *****/
@@ -227,6 +209,11 @@ p {
   display: flex;
 }
 
+.modal-content {
+  font-size: 14px;
+  margin-bottom: 80px;
+}
+
 .modal-badge {
   display: flex;
   align-items: center;
@@ -238,7 +225,7 @@ p {
   text-decoration: none;
 }
 
-.contact-icon {
+.modal-icon {
   font-size: 1rem;
   margin-right: 3px;
 }
@@ -253,9 +240,26 @@ p {
   color: #FFC107;
 }
 
-.modal-content {
-  font-size: 12px;
-  margin-bottom: 80px;
+.btn-join {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.8em 2.4em;
+  font-size: 1.6em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #142a39;
+  color: #5eead3;
+  transition: border-color 0.25s;
+  margin-bottom: 30px;
+}
+
+.btn-join:hover {
+  border-color: #5eead3;
+}
+
+.btn-join:focus,
+.btn-join:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 .btn-download {
@@ -266,7 +270,6 @@ p {
   display: flex;
   justify-content: center;
   padding: 5px 0;
-  cursor: pointer;
 }
 
 .download-icon {
@@ -287,7 +290,6 @@ p {
   width: 50px; /* You can adjust this */
   height: 50px; /* You can adjust this */
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .btn-close-modal:hover {
@@ -317,7 +319,7 @@ p {
     width: 40px;
   }
 
-  .bio-company {
+  .header-company {
     font-size: .9rem;
   }
 /***** MEDIA QUERIES 768PX | HERO.JSX *****/
@@ -326,7 +328,7 @@ p {
       padding: 20px 20px;
     }
 
-  .logo {
+  .bio-image {
     width: 115px;
     border-radius: 100%;
   }
@@ -335,10 +337,6 @@ p {
     font-size: 1.8rem;
     margin: 10px auto;
   }
-  .bio-position {
-    font-size: 1em;
-    font-weight: 400;
-  }
 
   .bio-social {
     display: flex;
@@ -346,21 +344,7 @@ p {
     gap: 15px;
     margin-bottom: 21px;
   }
-/***** MEDIA QUERIES 768PX | CARD.JSX *****/
-  .cards-list {
-    padding: 0 20px;
-    margin-bottom: 40px;
-  }
-
-  .card:hover {
-    border-color: transparent;
-  }
-
-/***** MEDIA QUERIES 768PX | BIO.JSX *****/
-  .btn-support {
-    width: 100%;
-  }
-
+/***** MEDIA QUERIES 768PX | MODAL.JSX *****/
   .modal-overlay {
     display: flex;
     justify-content: center;
@@ -377,5 +361,9 @@ p {
 
   .modal-inner {
     border-radius: 20px 20px 0 0;
+  }
+
+  .btn-join {
+    width: 100%;
   }
 }
