@@ -132,6 +132,7 @@ p {
 }
 
 .btn-connect {
+  display: flex;
   background: #142a39;
   border: 1px solid transparent;
   border-radius: 20px;
@@ -147,6 +148,10 @@ p {
 
 .btn-connect span {
   margin-right: 5px;
+}
+
+.arrow-icon {
+  font-size: 1rem;
 }
 
 /***** COMPONENTS | BIO.JSX *****/
@@ -367,6 +372,7 @@ p {
     height: 100%;
     background: rgba(0, 0, 0, 0.9);
     z-index: 9999;
+    overflow-y: hidden;
   }
 
   .modal-inner {
