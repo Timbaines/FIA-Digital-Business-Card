@@ -34,7 +34,7 @@ const Modal = () => {
                             <div className="modal-content">
                                 <div className="modal-header">
                                     <h2>Volunteer Apps</h2>
-                                    <div className="mobile-header-contact">
+                                    <div className="modal-header-contact">
                                         <a href="tel:7175460208" className="modal-badge modal-phone"><AiOutlinePhone
                                             className="modal-icon"/>Call Us</a>
                                         <a href="mailto:FIA-USA@fiaintl.org" className="modal-badge modal-email"><AiOutlineMail
