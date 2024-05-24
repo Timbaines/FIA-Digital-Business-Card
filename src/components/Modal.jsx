@@ -35,13 +35,13 @@ const Modal = () => {
                                 <div className="modal-header">
                                     <h2>Volunteer Apps</h2>
                                     <div className="mobile-header-contact">
-                                        <a href="mailto:FIA-USA@fiaintl.org" className="modal-badge modal-email"><AiOutlineMail
-                                            className="modal-icon"/>Email</a>
                                         <a href="tel:7175460208" className="modal-badge modal-phone"><AiOutlinePhone
                                             className="modal-icon"/>Call Us</a>
+                                        <a href="mailto:FIA-USA@fiaintl.org" className="modal-badge modal-email"><AiOutlineMail
+                                            className="modal-icon"/>Email</a>
                                     </div>
                                 </div>
-                                <p className="primary-font">Ready to begin your calling? If you have a heart to serve, we can find a job for you! The forms are available for downloaded below.</p>
+                                <p className="primary-font">Ready to begin your calling? If you have a heart to serve, we can find a job for you! You can download the forms that are available below.</p>
                                 <button className="btn btn-download"><AiOutlineCloudDownload className="download-icon"/>Volunteer
                                     App
                                 </button>

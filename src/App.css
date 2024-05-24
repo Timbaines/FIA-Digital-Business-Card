@@ -138,13 +138,15 @@ p {
 
 .btn-connect {
   display: flex;
+  align-items: center;
   background: #142a39;
   border: 1px solid transparent;
   border-radius: 20px;
   color: #5eead3;
   width: 70px;
   font-size: .8rem;
-  padding: 5px 12px;
+  letter-spacing: .02rem;
+  padding: 6px 12px;
   position: absolute;
   right: 15px;
   top: 60px;
@@ -155,16 +157,13 @@ p {
 }
 
 .arrow-icon {
-  font-size: 1rem;
+  font-size: 1rem
 }
 
 /***** COMPONENTS | BIO.JSX *****/
 .container-bio {
   padding: 0 20px;
-}
-
-.bio-content {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .bio-standout {
@@ -343,6 +342,14 @@ p {
     font-size: 20px;
     gap: 15px;
     margin-bottom: 21px;
+  }
+/***** MEDIA QUERIES 768PX | CARDS.JSX *****/
+  .cards-list {
+    padding: 0 20px;
+  }
+
+  .card:hover {
+    border-color: transparent;
   }
 /***** MEDIA QUERIES 768PX | MODAL.JSX *****/
   .modal-overlay {
