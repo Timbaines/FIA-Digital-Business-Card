@@ -4,12 +4,12 @@
   font-size: 62.5%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 /***** TYPOGRAPHY | GLOBAL *****/
 h2 {
-  font-size: 1rem;
+  font-size: 1.8em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -44,13 +44,13 @@ p {
 }
 
 .header-company {
-  font-size: 1rem;
+  font-size: 1.6em;
   font-weight: 100;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 /***** COMPONENTS | HERO.JSX *****/
-.container-hero {
+.hero-container {
   padding: 60px 20px;
   display: flex;
   align-items: center;
@@ -67,13 +67,13 @@ p {
   font-weight: 700;
   line-height: 3.4rem;
   letter-spacing: .02rem;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .bio-social {
   display: flex;
-  font-size: 24px;
-  gap: 16px;
+  font-size: 2.6em;
+  gap: 18px;
 }
 
 .bio-social a {
@@ -87,12 +87,12 @@ p {
 }
 
 /***** COMPONENTS | CARD.JSX *****/
-.cards-list {
+.card-container {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
   overflow-x: auto;
-  margin-bottom: 50px;
+  padding: 60px 20px;
 }
 
 *{ /* Hide Scrollbar */
@@ -161,9 +161,8 @@ p {
 }
 
 /***** COMPONENTS | BIO.JSX *****/
-.container-bio {
-  padding: 0 20px;
-  margin-bottom: 40px;
+.bio-container {
+  padding: 20px;
 }
 
 .bio-standout {
@@ -202,11 +201,11 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.4em;
 }
 
 .mobile-header-contact {
   display: flex;
+  font-size: 1.4em;
 }
 
 .modal-content {
@@ -259,7 +258,7 @@ p {
 .btn-download {
   background: transparent;
   color: #5eead3;
-  font-size: 1rem;
+  font-size: 1.6em;
   border: none;
   display: flex;
   justify-content: center;
@@ -268,7 +267,6 @@ p {
 
 .download-icon {
   color: #5eead3;
-  font-size: 1.4rem;
   margin-right: 8px;
 }
 
@@ -290,36 +288,39 @@ p {
   background: #5eead3;
   color: #142a39;
 }
-
-
 /***** MEDIA QUERIES 960PX | HEADER.JSX *****/
 @media screen and (max-width: 960px) {
-  .logo {
+  .hero-container {
+    padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  .bio-image {
     width: 160px;
   }
 
   .bio-name {
-    font-size: 2.1rem;
-    margin: 10px auto;
+    font-size: 2.5rem;
+    margin: 20px auto;
+  }
+
+  .bio-social {
+    font-size: 2.5em;
+    gap: 15px;
   }
 }
-
 /***** MEDIA QUERIES 768PX | HEADER.JSX *****/
 @media screen and (max-width: 768px) {
-  #root {
-    padding: 0;
-  }
   .fia-logo {
     width: 40px;
   }
-
-  .header-company {
-    font-size: .9rem;
-  }
 /***** MEDIA QUERIES 768PX | HERO.JSX *****/
-  .container-hero {
+  .hero-container {
       display: block;
-      padding: 20px 20px;
+      padding: 20px;
     }
 
   .bio-image {
@@ -333,27 +334,28 @@ p {
   }
 
   .bio-social {
-    display: flex;
-    font-size: 20px;
-    gap: 15px;
-    margin-bottom: 21px;
+    font-size: 2.3em;
+    margin-bottom: 10px;
   }
 /***** MEDIA QUERIES 768PX | CARDS.JSX *****/
-  .cards-list {
-    padding: 0 20px;
+  .card-container {
+    padding: 40px 20px;
   }
 
   .card:hover {
     border-color: transparent;
   }
-/***** MEDIA QUERIES 768PX | MODAL.JSX *****/
-  .btn-join {
-    width: 100%;
-  }
 }
-
-/***** MEDIA QUERIES 561PX | MODAL.JSX *****/
+/***** MEDIA QUERIES 561PX | HEADER.JSX *****/
 @media screen and (max-width: 561px) {
+  .header-company {
+    font-size: 1.4em;
+  }
+/***** MEDIA QUERIES 561PX | CARD.JSX *****/
+  .card-container {
+    padding: 20px;
+  }
+/***** MEDIA QUERIES 561PX | MODAL.JSX *****/
   .modal-overlay {
     display: flex;
     justify-content: center;
@@ -370,5 +372,9 @@ p {
 
   .modal-inner {
     border-radius: 20px 20px 0 0;
+  }
+
+  .btn-join {
+    width: 100%;
   }
 }

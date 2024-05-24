@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import DarkModeToggle from "./components/DarkModeToggle.jsx";
 import Hero from './components/Hero';
 import Bio from './components/Bio';
 import Card from "./components/Card.jsx";
@@ -21,7 +22,7 @@ function App() {
     <>
         <Header />
         <Hero />
-        <div className="cards-list">
+        <div className="card-container">
             {cards}
         </div>
         <Bio/>

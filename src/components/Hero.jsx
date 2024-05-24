@@ -4,21 +4,21 @@ import { FaInstagram, FaLinkedin, FaFacebook, FaSnapchatSquare, FaYoutube } from
 export default function Hero() {
 
     return (
-        <div className="container-hero">
+        <div className="hero-container">
             <img src={bioLogo} className="bio-image" alt=""/>
             <div className="bio-info">
                 <h1 className="bio-name">Andy Bachert</h1>
                 <div className="bio-social">
                     <a href="https://www.linkedin.com/in/andrew-bachert-68250479/" target="_blank"
                        rel="noopener noreferrer"><FaLinkedin/></a>
-                    <a href="https://www.instagram.com/abachert76" target="_blank"
-                       rel="noopener noreferrer"><FaInstagram/></a>
                     <a href="https://www.facebook.com/andy.bachert" target="_blank"
                        rel="noopener noreferrer"><FaFacebook/></a>
+                    <a href="https://www.instagram.com/abachert76" target="_blank"
+                       rel="noopener noreferrer"><FaInstagram/></a>
                     <a href="https://story.snapchat.com/s/abachert123" target="_blank"
                        rel="noopener noreferrer"><FaSnapchatSquare/></a>
                     <a href="https://www.youtube.com/channel/UCaNMokRDzPNlouU-UuL-W7Q" target="_blank"
-                       rel="noopener noreferrer"><FaYoutube />
+                       rel="noopener noreferrer"><FaYoutube/>
                     </a>
                 </div>
             </div>
