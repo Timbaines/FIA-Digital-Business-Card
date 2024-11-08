@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import DarkModeToggle from "./components/DarkModeToggle.jsx";
+// import DarkModeToggle from "./components/DarkModeToggle.jsx";
 import Hero from './components/Hero';
 import Bio from './components/Bio';
 import Card from "./components/Card.jsx";

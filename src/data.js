@@ -1,55 +1,55 @@
 export default [
     {
         id: 1,
-        spot: "01",
-        coverImg: "",
+        number: "01",
+        backgroundImage: "",
         title: "FIA",
         socialBadge: "FIA_logo-150x150.png",
-        connect: "",
+        socialConnect: "",
     },
 
     {
         id: 2,
-        spot: "02",
-        coverImg: "",
+        number: "02",
+        backgroundImage: "",
         title: "",
         socialBadge: "bachert-steel-fabrication.png",
-        connect: "",
+        socialConnect: "",
     },
 
     {
         id: 3,
-        spot: "03",
-        coverImg: "",
+        number: "03",
+        backgroundImage: "",
         title: "",
         socialBadge: "andys-blog.png",
-        connect: "",
+        socialConnect: "",
     },
 
     {
         id: 4,
-        spot: "04",
-        coverImg: "",
+        number: "04",
+        backgroundImage: "",
         title: "",
         socialBadge: "andys-newsletter.png",
-        connect: "",
+        socialConnect: "",
     },
 
     {
         id: 5,
-        spot: "05",
-        coverImg: "",
+        number: "05",
+        backgroundImage: "",
         title: "",
         socialBadge: "andys-whatsapp.png",
-        connect: "",
+        socialConnect: "",
     },
 
     {
         id: 6,
-        spot: "06",
-        coverImg: "",
+        number: "06",
+        backgroundImage: "",
         title: "",
         socialBadge: "andys-join-me.png",
-        connect: "",
+        socialConnect: "",
     }
 ]
